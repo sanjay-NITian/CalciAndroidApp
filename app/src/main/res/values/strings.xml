@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Calci</string>
+    <string name="welcome_screen_bg">Welcome to Calci</string>
+    <string name="author_name">By Sanjay Kumar</string>
+    <string name="title_activity_converter">ConverterActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <!--    these are the options for the dropdown menus-->
+    <string-array name="area">
+        <item>Acres (ac)</item>
+        <item>Ares (a)</item>
+        <item>Hectares (ha)</item>
+        <item>Square centimetres (cm^2)</item>
+        <item>Square feet (ft^2)</item>
+        <item>Square inches (in^2)</item>
+        <item>Squares metres (m^2)</item>
+    </string-array>
+
+    <string-array name="length">
+        <item>Millimetres (mm)</item>
+        <item>Centimetres (cm)</item>
+        <item>Metres (m)</item>
+        <item>Kilometres (km)</item>
+        <item>Inches (in)</item>
+        <item>Feet (ft)</item>
+        <item>Yards (yd)</item>
+        <item>Miles (mi)</item>
+        <item>Nautical miles (NM)</item>
+        <item>Mils (mil)</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Celsius (C)</item>
+        <item>Fahrenheit (F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>UK gallons (gal)</item>
+        <item>US gallons (gal)</item>
+        <item>Litres (l)</item>
+        <item>Millilitres (ml)</item>
+        <item>Cubic centimetres (cc) (cm^3)</item>
+        <item>Cubic metres (m^3)</item>
+        <item>Cubic inches (in^3)</item>
+        <item>Cubic feet (ft^3)</item>
+    </string-array>
+
+    <string-array name="mass">
+        <item>Tons (t)</item>
+        <item>UK tons (t)</item>
+        <item>US tons (t)</item>
+        <item>Pounds (lb)</item>
+        <item>Ounces (oz)</item>
+        <item>Kilogrammes (kg)</item>
+        <item>Grams (g)</item>
+    </string-array>
+
+    <string-array name="data">
+        <item>Bits (bit)</item>
+        <item>Bytes (B)</item>
+        <item>Kilobytes (KB)</item>
+        <item>Megabytes (MB)</item>
+        <item>Gigabytes (GB)</item>
+        <item>Terabytes (TB)</item>
+    </string-array>
+
+    <string-array name="speed">
+        <item>Metres per second (m/s)</item>
+        <item>Metres per hour (m/h)</item>
+        <item>Kilometres per second (km/s)</item>
+        <item>Kilometres per hour (km/h)</item>
+        <item>Inches per second (in/s)</item>
+        <item>Inches per hour (in/h)</item>
+        <item>Feet per second (ft/s)</item>
+        <item>Feet per hour (ft/h)</item>
+        <item>Miles per second (mi/s)</item>
+        <item>Miles per hour (mi/h)</item>
+        <item>Knots (kn)</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Milliseconds (ms)</item>
+        <item>Seconds (s)</item>
+        <item>Minutes (min)</item>
+        <item>Hours (h)</item>
+        <item>Days (d)</item>
+        <item>Weeks (wk)</item>
+    </string-array>
+
+</resources>
