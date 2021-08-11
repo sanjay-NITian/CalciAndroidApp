@@ -3,9 +3,14 @@ package com.example.calci;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Vibrator;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -72,10 +77,7 @@ public class MainActivity extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 Toast.makeText(MainActivity.this, "We will coming soon", Toast.LENGTH_SHORT).show();
             }
@@ -85,10 +87,7 @@ public class MainActivity extends AppCompatActivity {
         advance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 Toast.makeText(MainActivity.this, "We are working on advance feature", Toast.LENGTH_SHORT).show();
             }
@@ -98,10 +97,7 @@ public class MainActivity extends AppCompatActivity {
         cut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts here
@@ -137,10 +133,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Setting the translation to the image picture
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 Intent intent = new Intent(MainActivity.this, ConverterActivity.class);
                 startActivity(intent);
@@ -153,10 +146,7 @@ public class MainActivity extends AppCompatActivity {
         btn_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 expression = "";
                 parenthesis_count = 0;
@@ -168,10 +158,7 @@ public class MainActivity extends AppCompatActivity {
         btn_paren.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 // Logic starts here
                 int expression_length=expression.length();
@@ -237,10 +224,7 @@ public class MainActivity extends AppCompatActivity {
         btn_mod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts from here
@@ -261,10 +245,7 @@ public class MainActivity extends AppCompatActivity {
         btn_div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts here
@@ -300,10 +281,7 @@ public class MainActivity extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("7");
                 tv1.setText(expression);
@@ -325,10 +303,7 @@ public class MainActivity extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("8");
                 tv1.setText(expression);
@@ -349,11 +324,7 @@ public class MainActivity extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
-
+                onTouchButtonBackgroundEffect(v);
                 addNumbersToExpression("9");
                 tv1.setText(expression);
 
@@ -373,10 +344,7 @@ public class MainActivity extends AppCompatActivity {
         btn_mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  *
@@ -416,10 +384,7 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("4");
                 tv1.setText(expression);
@@ -440,10 +405,7 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("5");
                 tv1.setText(expression);
@@ -464,10 +426,7 @@ public class MainActivity extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("6");
                 tv1.setText(expression);
@@ -488,10 +447,7 @@ public class MainActivity extends AppCompatActivity {
         btn_hyp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts here
@@ -523,10 +479,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("1");
                 tv1.setText(expression);
@@ -547,10 +500,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("2");
                 tv1.setText(expression);
@@ -571,10 +521,7 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("3");
                 tv1.setText(expression);
@@ -595,10 +542,7 @@ public class MainActivity extends AppCompatActivity {
         btn_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
-                v.setTranslationY(25f);
-                v.animate().translationYBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts here
@@ -630,10 +574,7 @@ public class MainActivity extends AppCompatActivity {
         btn_plus_min.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 Toast.makeText(MainActivity.this, "We will update soon", Toast.LENGTH_SHORT).show();
             }
@@ -642,10 +583,7 @@ public class MainActivity extends AppCompatActivity {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 addNumbersToExpression("0");
                 tv1.setText(expression);
@@ -666,10 +604,7 @@ public class MainActivity extends AppCompatActivity {
         btn_point.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationX(25f);
-                v.animate().translationXBy(-25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * Logic starts from here
@@ -706,10 +641,7 @@ public class MainActivity extends AppCompatActivity {
         btn_equal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setTranslationX(-25f);
-                v.animate().translationXBy(25f).setDuration(100);
-                v.setTranslationY(-25f);
-                v.animate().translationYBy(25f).setDuration(100);
+                onTouchButtonBackgroundEffect(v);
 
                 /**
                  * adding to result
@@ -746,5 +678,16 @@ public class MainActivity extends AppCompatActivity {
             expression += number;
         }
     }
+
+    public void onTouchButtonBackgroundEffect(View view){
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.vibrate(45);
+
+        view.setTranslationX(25f);
+        view.animate().translationXBy(-25f).setDuration(80);
+        view.setTranslationY(25f);
+        view.animate().translationYBy(-25f).setDuration(80);
+    }
+
 
 }

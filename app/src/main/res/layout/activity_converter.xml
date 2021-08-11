@@ -15,18 +15,19 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline8">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            app:tabMode="scrollable" />
+            android:backgroundTint="@color/white"
+            app:tabBackground="@drawable/button_background"
+            app:tabIndicatorColor="#12732D"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#12732D"
+            app:tabTextColor="@color/black" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
