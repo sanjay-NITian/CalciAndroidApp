@@ -8,6 +8,22 @@
     android:orientation="vertical"
     tools:context=".ConverterActivity">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="7dp"
+        android:background="#80DCDCDC"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#12732D"
+        app:tabMode="scrollable"
+        app:tabRippleColor="#12732D"
+        app:tabSelectedTextColor="#12732D"
+        app:tabTextColor="@color/black" />
+
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
@@ -15,355 +31,354 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="7dp"
-            android:backgroundTint="@color/white"
-            app:tabBackground="@drawable/button_background"
-            app:tabIndicatorColor="#12732D"
-            app:tabMode="scrollable"
-            app:tabSelectedTextColor="#12732D"
-            app:tabTextColor="@color/black" />
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="340dp">
+            android:layout_height="400dp">
 
         </androidx.viewpager.widget.ViewPager>
 
     </LinearLayout>
 
-    <LinearLayout
+<!--    <LinearLayout-->
 
-        android:id="@+id/linearLayout"
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:gravity="bottom"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/guideline9"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline7"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="7"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button8"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="8"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button9"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="9"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button_back"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="B"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#4CAF50"-->
+<!--                android:textSize="20sp"-->
+<!--                app:backgroundTint="#27000000" />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="4"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="5"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="6"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button_c"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="C"-->
+<!--                android:textColor="#4CAF50"-->
+<!--                android:textSize="20sp"-->
+<!--                app:backgroundTint="#27000000" />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="2"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="3"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button_up"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="UP"-->
+<!--                android:textColor="#4CAF50"-->
+<!--                android:textSize="20sp"-->
+<!--                app:backgroundTint="#27000000" />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_btn_plus_min"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="+/-"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button0"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="0"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_btn_point"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/converter_button_down"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:gravity="center|center_horizontal|center_vertical"-->
+<!--                android:text="DN"-->
+<!--                android:textColor="#4CAF50"-->
+<!--                android:textSize="20sp"-->
+<!--                app:backgroundTint="#27000000" />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="bottom"
-        android:orientation="vertical"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/converter_button7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="7"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="8"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button9"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="9"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button_back"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="B"
-                android:textAllCaps="false"
-                android:textColor="#4CAF50"
-                android:textSize="20sp"
-                app:backgroundTint="#27000000" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/converter_button4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="4"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="5"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="6"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button_c"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="C"
-                android:textColor="#4CAF50"
-                android:textSize="20sp"
-                app:backgroundTint="#27000000" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/converter_button1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="1"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="2"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="3"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button_up"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="UP"
-                android:textColor="#4CAF50"
-                android:textSize="20sp"
-                app:backgroundTint="#27000000" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/converter_btn_plus_min"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="+/-"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button0"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="0"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_btn_point"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="."
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/converter_button_down"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_background"
-                android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="DN"
-                android:textColor="#4CAF50"
-                android:textSize="20sp"
-                app:backgroundTint="#27000000" />
-
-
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/temp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"

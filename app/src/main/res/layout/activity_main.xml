@@ -133,7 +133,7 @@
                 android:background="@drawable/button_background"
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_vertical"
-                android:textColor="#F44336"
+                android:textColor="#12732D"
                 android:textSize="20sp"
                 android:text="()" />
 
@@ -147,7 +147,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="%"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
             <Button
@@ -160,7 +160,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="/"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -223,7 +223,7 @@
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="x"
                 android:textAllCaps="false"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -284,7 +284,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="-"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -345,7 +345,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="+"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -406,7 +406,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="="
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
