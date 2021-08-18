@@ -13,14 +13,13 @@
         android:id="@+id/tv1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/amiko"
         android:gravity="right"
         android:padding="5dp"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
@@ -28,33 +27,20 @@
         android:id="@+id/tv2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/amiko"
         android:gravity="right"
         android:padding="5dp"
         android:textColor="#03A9F4"
-        android:textSize="16sp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:background="#1D000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -68,8 +54,7 @@
             android:layout_weight="1"
             android:background="#FFFFFF"
             android:padding="10dp"
-            app:srcCompat="@drawable/history"
-            app:tint="#74000000" />
+            android:src="@drawable/ic_baseline_history_24" />
 
         <ImageView
             android:id="@+id/converter"
@@ -77,8 +62,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="10dp"
-            app:srcCompat="@drawable/converter"
-            app:tint="#74000000" />
+            android:src="@drawable/ic_baseline_autorenew_24" />
 
         <ImageView
             android:id="@+id/imageAdvance"
@@ -87,7 +71,7 @@
             android:layout_weight="1"
             android:padding="10dp"
             app:srcCompat="@drawable/advance"
-            app:tint="#74000000" />
+            app:tint="#12732D" />
 
         <ImageView
             android:id="@+id/cut"
@@ -95,9 +79,19 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="10dp"
-            app:srcCompat="@drawable/cut"
-            app:tint="#4CAF50" />
+            android:src="@drawable/ic_baseline_backspace_24"/>
     </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#1D000000"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <LinearLayout
 
@@ -106,7 +100,7 @@
         android:layout_height="0dp"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3">
@@ -128,8 +122,7 @@
                 android:gravity="center|center_vertical"
                 android:text="C"
                 android:textColor="#F44336"
-                android:textSize="20sp"
-                app:backgroundTint="#27000000" />
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btn_paren"
@@ -139,10 +132,10 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:fontFamily="sans-serif"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:text="()"
-                android:textColor="#4CAF50"
-                android:textSize="20sp" />
+                android:gravity="center|center_vertical"
+                android:textColor="#12732D"
+                android:textSize="20sp"
+                android:text="()" />
 
             <Button
                 android:id="@+id/btn_mod"
@@ -154,7 +147,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="%"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
             <Button
@@ -167,7 +160,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="/"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -230,7 +223,7 @@
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="x"
                 android:textAllCaps="false"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -291,7 +284,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="-"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -352,7 +345,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="+"
-                android:textColor="#4CAF50"
+                android:textColor="#12732D"
                 android:textSize="20sp" />
 
 
@@ -413,9 +406,8 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="="
-                android:textColor="#4CAF50"
-                android:textSize="20sp"
-                app:backgroundTint="#0F7813" />
+                android:textColor="#12732D"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
